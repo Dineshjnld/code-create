@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Be-TECHie</title>
+    <link rel="icon" href="logo_.png" type="image/x-icon">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <nav>
+        <div class="container">
+            <h1>
+                <span class="highlight">B</span>e-<span class="highlight">TECH</span>ie
+            </h1>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <style>
+        .login-container {
+            text-align: center;
+            margin: 40px auto;
+            width: 300px;
+            padding: 20px ;
+            background-color: #f6ebeb;
+            border-radius: 5px;
+        }
+
+        .login-container h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color:rgb(9, 20, 20);
+        }
+
+        .login-container label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .login-container input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your existing HTML content -->
+
+    <div class="login-container">
+        <form id="login-form" action="javascript:void(0);" method="POST">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" id="login-button">Login</button>
+        </form>
+    </div>
+</body>
+</html>

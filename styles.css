@@ -50,17 +50,16 @@ nav {
     text-decoration: none;
     color: #fff;
     display: inline-block;
-    padding: 10px 20px; /* Adjust the padding to control button size */
-    background-color: #11b3ea; /* Button background color */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Add a smooth hover effect */
+    padding: 10px 20px; 
+    background-color: #11b3ea; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
 }
 
 .menu a:hover {
-    background-color: #ed4826; /* Change button color on hover */
+    background-color: #ed4826;
 }
 
-/* Style the content sections */
 h2 {
     margin-top: 20px;
 }
@@ -80,11 +79,11 @@ h2 {
         margin-right: 10px;
     }
 }
-   /* Style for the video background */
+   
    body {
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Hide scrollbar caused by video */
+    overflow: hidden; 
 }
 
 #background-video {
@@ -93,21 +92,33 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the video covers the entire viewport */
-    z-index: -1; /* Place the video behind other content */
+    object-fit: cover;
+    z-index: -1; 
 }
 
-/* Style for the content container */
 .container {
     position: relative;
-    z-index: 1; /* Place the content above the video */
+    z-index: 1; 
 }
 
-/* Additional styles as needed */
 h2 {
-    font-size: 24px;
+    font-size: 36px;
+    color:#fff;
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
+    color:#fff;
+}
+.explore-button {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #11b3ea; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+.explore-button:hover {
+    background-color: #f13232; 
 }
