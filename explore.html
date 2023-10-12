@@ -10,7 +10,6 @@
 <body>
     <video autoplay muted loop id="background-video">
         <source src="video.mp4" type="video/mp4">
-    
     </video>
 
     <nav>
@@ -24,26 +23,65 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <section id="home">
-            <h2>Why Be-TECHie?</h2>
-            <br>
-            <p>Opportunity Blindness</p>
-            <br>
-            <p> Guidance Gap</p>
-                <br>
-                <p>Tips for Success</p>
-                <br>
-                <p>Stay Informed</p>
-                <br>
-                <p>Career Advancement</p>
-                <br>
-                <p>Tech Community</p>
-                <section id="home">
-                    <h2>Wanna Explore??</h2>
-                    <a href="login.html" class="explore-button">Login</a>
-                </section>
-                
+
+    <!-- Filters -->
+    <div class="filters">
+        <label for="passout-year">Passout Year:</label>
+        <select id="passout-year">
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+        </select>
+
+        <label for="branch">Branch:</label>
+        <select id="branch">
+            <option value="cse/it">CSE/IT</option>
+            <option value="ece">ECE</option>
+            <option value="eee">EEE</option>
+        </select>
+    </div>
+
+    <!-- CSS for Filters -->
+    <style>
+        .filters {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .filters label {
+            font-weight: bold;
+            margin-right: 10px;
+            color: aliceblue;
+        }
+
+        .filters select {
+            padding: 5px;
+            font-size: 16px;
+        
+        }
+    </style>
+      <!-- Job Listing -->
+      <div class="job-listing">
+        <h2>Job Listings</h2>
+        <ul>
+            <li>
+                <p>1)2024 Graduate - Software Development Engineer</p>
+                <p> S&P Global  is looking for a talented software developer to join their team.</p>
+                <button class="apply-button" onclick="window.open('https://careers.spglobal.com/jobs/293387/', '_blank')">Apply</button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Tips Box -->
+    <div class="tips-box">
+        <h2>Tips </h2>
+        <p>Here are some tips </p>
+        <ul>
+            <p>Continuously update your skills and knowledge.</p>
+           <p>Craft your Resume based on the keywords needed</p>
+           <button class="craft-resume-button" onclick="window.open('https://cvwolf.com/index.php', '_blank')">Crafting Resume</button>
+            
+        </ul>
     </div>
 </body>
 </html>
