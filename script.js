@@ -1,6 +1,6 @@
-const menuIcon = document.querySelector('.menu-icon');
-const menu = document.querySelector('.menu');
+const menuButton = document.querySelector(".logo");
+const menuList = document.querySelector(".menu");
 
-menuIcon.addEventListener('click', () => {
-    menu.classList.toggle('active');
+menuButton.addEventListener("click", () => {
+    menuList.classList.toggle("active");
 });

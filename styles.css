@@ -1,82 +1,113 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles and apply a basic font */
+body, h1, h2, p {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
 }
 
+.highlight {
+    color: #16c2e9;
+    font-weight: bold;
+}
+
+/* Style the navigation bar and make it sticky */
 nav {
+    background-color: #282825;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 }
 
-.menu-icon {
+.title {
     font-size: 24px;
-    cursor: pointer;
-    display: none;
 }
 
 .menu {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
 }
 
 .menu li {
-    margin: 0 15px;
+    margin-right: 20px;
 }
 
+/* Style menu items as buttons */
 .menu a {
     text-decoration: none;
     color: #fff;
+    display: inline-block;
+    padding: 10px 20px; /* Adjust the padding to control button size */
+    background-color: #11b3ea; /* Button background color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Add a smooth hover effect */
 }
 
-main {
-    padding: 20px;
-    text-align: center;
+.menu a:hover {
+    background-color: #ed4826; /* Change button color on hover */
 }
 
-h1 {
-    font-size: 36px;
+/* Style the content sections */
+h2 {
+    margin-top: 20px;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .menu li {
+        margin-right: 10px;
+    }
+}
+   /* Style for the video background */
+   body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scrollbar caused by video */
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire viewport */
+    z-index: -1; /* Place the video behind other content */
+}
+
+/* Style for the content container */
+.container {
+    position: relative;
+    z-index: 1; /* Place the content above the video */
+}
+
+/* Additional styles as needed */
+h2 {
+    font-size: 24px;
 }
 
 p {
-    font-size: 18px;
-}
-
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    .menu.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
-        width: 100%;
-        padding: 20px 0;
-    }
-
-    .menu.active li {
-        padding: 10px 0;
-        margin: 0;
-        text-align: center;
-    }
+    font-size: 16px;
 }
